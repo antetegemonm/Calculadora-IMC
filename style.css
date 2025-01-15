@@ -1,0 +1,179 @@
+*{
+
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background-color:  	 	#1C1C1C;
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    color:white;
+    position: absolute;
+}
+
+.cabecalho {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: justify;
+    padding-left: 45px;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative; /* Para permitir que a borda seja posicionada corretamente */
+}
+
+.cabecalho::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Coloca a borda na parte inferior */
+    left: 10%; /* Centraliza a borda */
+    width: 52%; /* Define que a borda ocupará 50% da largura */
+    border-bottom: 2px solid #3CB371; /* Define a borda inferior */
+}
+.inputs{
+display: flex;
+flex-direction: column;
+}
+
+.inputs *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+
+}
+.inputs input{
+width: 50vh;
+height: 5vh;
+border:  	#696969 solid 2px;
+background-color:  	#696969;
+display: flex;
+outline: none;
+transition: ease-in 200ms;
+color:#fff;
+}
+
+input:focus {
+    border-color: #C0C0C0; /* Cor da borda quando o input está em foco */
+    box-shadow: 0 0 0.5px rgba(192,192,192); /* Adiciona sombra azul quando em foco */
+}
+
+
+.button{
+    border:#3CB371 2px;
+    width: 50vh;
+    height: 5vh;
+    background-color: #3CB371;
+    color:white;
+    transition: ease-in 200ms;
+    font-weight: bold;
+}
+
+.button:hover{
+    
+    width: 52vh;
+    height: 6vh;
+}
+
+.button:active{
+    
+   background-color: 	#00FF7F;
+}
+
+.resultado{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50vh;
+    height: 15vh;
+    padding-top: 5px;
+    border-top: 1px solid #3CB371; /* Borda superior verde */
+    border-bottom: 1px solid #3CB371; /* Borda inferior cinza */
+    text-align:justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif ;
+}
+.resultado h5{
+
+align-self: center;
+color:#3CB371;
+transition: ease-in 200ms;
+}
+
+.resultado h5:hover{
+    text-decoration:underline #00FF7F;
+    cursor:pointer;
+    align-self: center;
+    color:#00FF7F;
+    }
+
+    .infos {
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        left: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 600px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        border: solid 1px #3CB371;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #3CB371;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: left 300ms ease-in-out, opacity 300ms ease-in-out, visibility 300ms ease-in-out; /* Transição suave */
+    }
+    
+    .infos > div {
+        opacity: 0;  /* Mantém as divs invisíveis inicialmente */
+        visibility: hidden; /* Inicialmente ocultas */
+        transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out; /* Suaviza a visibilidade */
+    }
+    
+    .infos > div.visible {
+        opacity: 1;  /* Torna a div visível */
+        visibility: visible; /* Torna a div visível */
+    }
+    
+    .abaixo, .normal, .Sobrepeso, .obesidade {
+        margin-bottom: 20px;
+    }
+    
+    .calculadora {
+        z-index: 2;
+        position: relative;
+        left: 580px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 600px;
+        align-items: center;
+        justify-content: space-evenly;
+        border: solid 1px #363636;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        background-color: #363636;
+        transition: left 300ms ease-in-out; /* Animação da calculadora */
+    }
+    
+    button {
+        margin-top: 20px;
+    }
+    
+    
+    
+    
+   
+    
+    
+    
+
+    
+
+

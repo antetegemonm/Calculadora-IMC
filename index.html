@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="calculadora">
+  <header class="cabecalho"> 
+    <h1>CALCULADORA IMC</h1>
+  </header>
+
+  <form class="inputs">
+    <label for="peso">PESO EM QUILOS:</label>
+    <input type="text" id="peso" placeholder="Ex: 70" required>
+  </form>
+
+  <form class="inputs">
+    <label for="altura">ALTURA EM METROS:</label>
+    <input type="text" id="altura" step="0.01" placeholder="Ex: 1.75" required>
+  </form>
+
+  <button class="button" type="button" id="calcular">CALCULAR</button>
+
+  <div class="resultado" id="resultado">
+    <h1>SEU IMC É:</h1>
+    <h5 id="infos">saiba mais de seu imc</h5>
+  </div>
+</section>
+
+<section class="infos">
+    <div class="abaixo">
+        <h1>Abaixo do peso (IMC < 18.5):</h1>
+        <p>Você está abaixo do peso ideal. Pode ser importante revisar sua alimentação e consultar um especialista.</p>
+    </div>
+
+    <div class="normal">
+        <h1>Peso normal (IMC 18.5 - 24.9):</h1>
+        <p>Parabéns! Seu peso está dentro da faixa considerada saudável. Mantenha um estilo de vida equilibrado.</p>
+    </div>
+
+    <div class="Sobrepeso">
+        <h1>Sobrepeso (IMC 25 - 29.9):</h1>
+        <p>Você está acima do peso ideal. Avalie seus hábitos alimentares e pratique atividades físicas regularmente.</p>
+    </div>
+
+    <div class="obesidade">
+        <h1>Obesidade (IMC ≥ 30):</h1>
+        <p>Seu IMC indica obesidade. É importante buscar orientação médica para cuidar da sua saúde.</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
